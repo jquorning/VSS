@@ -924,7 +924,7 @@ package body JSON_Schema.Writers.Types is
       Put (Root_Package);
       Put (" is");
       New_Line;
-      Write_Vector_Operations (Array_Types, Implemenetation);
+      Write_Vector_Operations (Array_Types, Implementation);
       Put ("end ");
       Put (Root_Package);
       Put (";");
@@ -953,7 +953,7 @@ package body JSON_Schema.Writers.Types is
                then "Enum." & Item else Item);
          begin
 
-            if Kind = Implemenetation then
+            if Kind = Implementation then
                Put ("procedure Free is new Ada.Unchecked_Deallocation");
                New_Line;
                Put ("(");
@@ -1004,7 +1004,7 @@ package body JSON_Schema.Writers.Types is
             Put (Item);
             Put ("_Vector) return Natural");
 
-            if Kind = Implemenetation then
+            if Kind = Implementation then
                Put (" is (Self.Length)");
             end if;
 
@@ -1016,7 +1016,7 @@ package body JSON_Schema.Writers.Types is
             Put (Item);
             Put ("_Vector)");
 
-            if Kind = Implemenetation then
+            if Kind = Implementation then
                Put (" is");
                New_Line;
                Put ("begin");
@@ -1039,7 +1039,7 @@ package body JSON_Schema.Writers.Types is
             Put (Element_Type);
             Put (")");
 
-            if Kind = Implemenetation then
+            if Kind = Implementation then
                Put (" is");
                New_Line;
                Put ("Init_Length : constant Positive :=");

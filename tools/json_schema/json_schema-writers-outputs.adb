@@ -228,7 +228,7 @@ package body JSON_Schema.Writers.Outputs is
            (Map,
             JSON_Schema.Readers.Schema_Maps.Key (Cursor),
             JSON_Schema.Readers.Schema_Maps.Element (Cursor),
-            Implemenetation);
+            Implementation);
       end loop;
 
       Put ("end ");

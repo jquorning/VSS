@@ -33,7 +33,7 @@ package JSON_Schema.Writers is
       VSS.Strings."=",
       VSS.Strings."=");
 
-   type Declaration_Kind is (Specification, Implemenetation);
+   type Declaration_Kind is (Specification, Implementation);
 
    procedure Put (Text : VSS.Strings.Virtual_String);
    --  Write Text to stdout

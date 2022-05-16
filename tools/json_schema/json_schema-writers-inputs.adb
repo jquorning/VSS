@@ -286,7 +286,7 @@ package body JSON_Schema.Writers.Inputs is
            (Map,
             JSON_Schema.Readers.Schema_Maps.Key (Cursor),
             JSON_Schema.Readers.Schema_Maps.Element (Cursor),
-            Implemenetation);
+            Implementation);
       end loop;
 
       Put ("end ");
@@ -484,7 +484,7 @@ package body JSON_Schema.Writers.Inputs is
          return;
       end if;
 
-      if Kind = Implemenetation then
+      if Kind = Implementation then
          Write_Hash (Map, Type_Name, Schema);
          Each_Anonymous_Schema (Schema, Hash_For_Anonymous_Schema'Access);
       end if;
