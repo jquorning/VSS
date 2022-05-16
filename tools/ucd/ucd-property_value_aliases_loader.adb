@@ -54,7 +54,7 @@ package body UCD.Property_Value_Aliases_Loader is
                --  Second field for 'ccc' property is numeric value.
 
                V.Canonical_Combining_Class_Value :=
-                 Properties.Canonical_Combinig_Class'Wide_Wide_Value
+                 Properties.Canonical_Combining_Class'Wide_Wide_Value
                    (Loader.Get_Field (1));
                F := 2;
             end if;

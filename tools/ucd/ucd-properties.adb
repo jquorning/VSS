@@ -56,8 +56,8 @@ package body UCD.Properties is
       if Property.Is_Canonical_Combining_Class then
          begin
             declare
-               Value : constant Canonical_Combinig_Class :=
-                 Canonical_Combinig_Class'Wide_Wide_Value (Value_Name);
+               Value : constant Canonical_Combining_Class :=
+                 Canonical_Combining_Class'Wide_Wide_Value (Value_Name);
 
             begin
                for V of Property.All_Values loop

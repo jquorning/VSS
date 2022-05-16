@@ -27,7 +27,7 @@ with Ada.Strings.Wide_Wide_Unbounded.Wide_Wide_Hash;
 
 package UCD.Properties is
 
-   type Canonical_Combinig_Class is range 0 .. 255;
+   type Canonical_Combining_Class is range 0 .. 255;
 
    package String_Vectors is
      new Ada.Containers.Vectors (Positive, Unbounded_Wide_Wide_String);
@@ -35,7 +35,7 @@ package UCD.Properties is
    type Property_Value is record
       Names                           : String_Vectors.Vector;
       Is_Used                         : Boolean := False;
-      Canonical_Combining_Class_Value : Canonical_Combinig_Class;
+      Canonical_Combining_Class_Value : Canonical_Combining_Class;
       String                          : Code_Point_Vectors.Vector;
    end record;
 

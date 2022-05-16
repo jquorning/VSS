@@ -44,7 +44,7 @@ package body UCD.Unicode_Data_Loader is
       GC_Property : constant not null Properties.Property_Access :=
         Properties.Resolve ("gc");
 
-      --  Canonical_Combinig_Class
+      --  Canonical_Combining_Class
 
       CCC_Field    : constant Data_File_Loaders.Field_Index := 3;
       CCC_Property : constant not null Properties.Property_Access :=
